@@ -6,18 +6,10 @@
 
 nav{
     background-color: white;
-    height: 50px; 
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.barra{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    border-bottom-style: solid;
-    z-index: 10;
 }
 
 .mainIndex img{
@@ -30,9 +22,14 @@ nav{
     margin-top: 65px;    
 }
 
-
 .header{
-    margin-bottom: 150px;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    border-bottom-style: solid;
+    z-index: 10;
+    width: 100%;
 }
 
 .logo img{
@@ -52,12 +49,16 @@ nav{
 .menu{
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: right;
     text-align: center;
     align-items: center;
     font-size: 18px; 
     font-family: 'Spartan', sans-serif;
     font-weight: 400;
+}
+
+.menuBarra{
+    justify-content: right;
 }
 
 .menu li{
@@ -77,6 +78,7 @@ nav{
                         "jardin historia"
                         "porQue pasto3"
                         "renova renova";
+    margin-top: 150px;
 }
 
 .quienesSomos{
@@ -177,17 +179,22 @@ a{
 
 .redes{
     display: flex;
+    flex-direction: row;
     list-style-type: none;
-    justify-content:space-evenly;
-    width: 40%;
-    margin-top: 20px;
+    justify-content:space-between;
+    width: 40%;    
 }
 
-.redes li a:hover{
+.instaIcon i:hover{
+    color: rgb(209, 0, 209);
+}
+
+.faceIcon i:hover{
+    color: rgb(40, 61, 245);
+}
+
+.phoneIcon i:hover{
     color: white;
-    font-weight: bolder;
-    
-    
 }
 
 .renova{
@@ -225,7 +232,7 @@ a{
     padding: 30px;
     align-items: center;    
     justify-content: center;
-    margin-top: 75px;
+    margin-top: 150px;
 }
 
 .fotosVariedades{
@@ -356,6 +363,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 150px;
 }
 
 .preguntas{
@@ -445,7 +453,7 @@ a{
     justify-content: space-between;
     padding: 20px;
     margin: 20px;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .contacto h2{
@@ -472,6 +480,21 @@ form{
     margin-bottom: 15px;
 }
 
+.nav-item{
+    font-size: 18px;
+    text-align: right;
+}
+
+.navbar-brand img{
+    height: 120px;
+}
+
+.iconosRedes{
+    font-size: 35px;
+}
+
+
+
 @media only screen and (max-width: 600px){
     .galeria{
         grid-template-columns: 80%;
@@ -491,10 +514,11 @@ form{
         font-size: 10px;
     }
     .redes{
-        flex-direction: column;
-        gap: 5px;
+        flex-direction: row;
+        
         margin-bottom: 10px;
         margin-top: 5px;
+        justify-content: space-between;
     }
     .mainIndex{
         grid-template-columns: 100%;
@@ -542,7 +566,7 @@ form{
     .logo img{
         width: 90%;
     }
-    .nav{
+    .menu{
         width: 100%;
     }
     .textoCarta{
@@ -591,6 +615,13 @@ form{
     padding: 16px;
     text-align: center;    
     }
+
+.navbar-brand img{
+        height: 80px;
+}
+.nav-item{
+    font-size: 12px;
+}
 }   
 
 
