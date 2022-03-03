@@ -47,27 +47,41 @@
     <section class="contacto">
         <div class="formulario">
             <h2>Contactanos</h2>
-            <form action="">
-                <input type="text" placeholder="NOMBRE">
-                <input type="text" placeholder="correo electrónico">
-                <input type="text" placeholder="teléfono de contacto">
-                <select name="" id="">
-                    <option value="">EMPRESA</option>
-                    <option value="">DOMICILIO PARTICULAR</option>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Teléfono de contacto</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Particular o empresa</option>
+                    <option value="1">Domicilio particular</option>
+                    <option value="2">Empresa</option>
                 </select>
-                <input type="number" placeholder="cantidad de metros cuadrados">
-                <textarea placeholder="Dejanos tu mensaje" id="" cols="30" rows="10"></textarea>
-                Quiero recibir correos con novedades y ofertas <input type="checkbox">
-                <input type="submit" >
-                <input type="reset">                
-            </form>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Deseo recibir novedades y ofertas especiales</label>
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>        
         </div>
 
 
 
         <div class="dondeEstamos">
             <h2>¿Dónde estamos?</h2>
-            
+            <a class="mapaUco" href="https://www.google.com/maps/place/UcoGrass/@-33.6053215,-69.1057281,17z/data=!3m1!4b1!4m5!3m4!1s0x967c3b1d310823dd:0x2cd1282d58ec67dd!8m2!3d-33.6053215!4d-69.1035394"><img src="../fotosuco/mapaucograss.JPG" alt=""></a>            
         </div>
     </section>
 

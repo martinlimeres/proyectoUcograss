@@ -450,7 +450,7 @@ a{
 
 .contacto{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 20px;
     margin-top: 150px;
 }
@@ -461,14 +461,9 @@ a{
     margin-bottom: 15px;
 }
 
-.formulario{
+.mapaUco img{
     width: 400px;
-    padding: 15px; 
-}
-
-form{
-    display: flex;
-    flex-direction: column;
+    margin-top: 25px;
 }
 
 .formulario h2{
@@ -586,52 +581,56 @@ form{
     text-align: center;
     }
 
-.nuestroProducto{
-    background-color: rgba(252, 252, 252, 0.829);
-    padding: 10px;
-    border-radius:0px;
-    margin: 0px;
-    width: 100%;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    .nuestroProducto{
+        background-color: rgba(252, 252, 252, 0.829);
+        padding: 10px;
+        border-radius:0px;
+        margin: 0px;
+        width: 100%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }   
 
 
-.nuestroProducto p{
-    font-size: 16px;
-    font-family: 'Spartan', sans-serif;
-    line-height: 35px;
-    padding: 10px;
-    text-align: justify;        
+    .nuestroProducto p{
+        font-size: 16px;
+        font-family: 'Spartan', sans-serif;
+        line-height: 35px;
+        padding: 10px;
+        text-align: justify;        
+        }
+
+    .nuestroProducto h2{
+        font-size: 22px;
+        font-family: 'Spartan', sans-serif;
+        padding: 16px;
+        text-align: center;    
+        }
+
+    .navbar-brand img{
+            height: 80px;
+    }
+    .nav-item{
+        font-size: 14px;
     }
 
-.nuestroProducto h2{
-    font-size: 22px;
-    font-family: 'Spartan', sans-serif;
-    padding: 16px;
-    text-align: center;    
+    .nav-item li a:hover{
+        color: black;
+        font-weight: bolder;
     }
 
-.navbar-brand img{
-        height: 80px;
+    .formulario{
+        width: 100%;
+    }
+    .mapaUco img{
+        width: 100%;
+    }
+    .dondeEstamos{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }   
 }
-.nav-item{
-    font-size: 14px;
-}
-
-.nav-item li a:hover{
-    color: black;
-    font-weight: bolder;
-}
-
-.formulario{
-    width: 100%;
-}   
-
-
-
-    
