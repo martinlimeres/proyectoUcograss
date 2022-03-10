@@ -282,8 +282,9 @@ a{
     border-radius: 10px;
     width: 27%;
     align-items: center;
-    background-color: white;         
+    background-color: white;
 }
+
 
 .variedades:hover{
     transform: scale(1.15,1.15);
@@ -315,10 +316,6 @@ a{
     row-gap: 50px;
     margin-bottom: 50px;
     margin-top:200px;
-}
-
-.galeria img{
-    width: 100%;
 }
 
 .foto1{
