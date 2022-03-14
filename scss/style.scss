@@ -1,0 +1,614 @@
+@import "./variables";
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: $fondoMain;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainIndex img{
+    width: 100%;
+}
+
+.header{
+    height: 150px;
+    position: fixed;
+    top: 0;
+    background-color: $fondoMain;
+    border-bottom-style: solid;
+    z-index: 10;
+    width: 100%;
+}
+
+.logo img{
+    width: 55%;
+    margin-left: 30px;
+    padding-top: 10px;
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    
+}
+
+.menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+    text-align: center;
+    align-items: center;
+    font-size: 18px; 
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+}
+
+.menuBarra{
+    justify-content: right;
+}
+
+.menu li{
+    margin: 20px;
+}
+
+.menu li a:hover{
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+
+.mainIndex{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:"quienes family"
+                        "jardin historia"
+                        "porQue pasto3"
+                        "renova renova";
+    margin-top: 150px;
+}
+
+.quienesSomos{
+    grid-area: quienes;
+}
+
+.fotoFamily{
+    grid-area: family;
+}
+
+
+.fotoJardin{
+    grid-area: jardin;
+}
+
+.fotosIndex{
+    filter: grayscale(50%)
+}
+
+.fotosIndex:hover{
+    filter: grayscale(0%);
+}
+
+.historia{
+    grid-area: historia;
+}
+
+.elegir{
+    grid-area: porQue;
+}
+
+.pasto3{
+    grid-area:pasto3;
+}
+
+.body p{
+    text-align: justify;
+    font-family: 'Spartan', sans-serif; 
+}
+
+a{
+    text-decoration: none;
+    color: $mainColor;
+    font-family: 'Spartan', sans-serif;    
+}
+
+.footer{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Spartan', sans-serif;
+    width: 100%;     
+}
+
+.cartas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 16px;
+    font-family: 'Spartan', sans-serif;
+    line-height: 35px;
+    padding: 25px;
+}
+
+.cuadros{
+    background-color: $fondoMain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 19px;    
+}
+
+.textoCarta{
+    margin: 50px;
+    font-size: 26px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content:space-between;
+    width: 40%;    
+}
+
+.instaIcon i:hover{
+    color: rgb(209, 0, 209);
+}
+
+.faceIcon i:hover{
+    color: rgb(40, 61, 245);
+}
+
+.phoneIcon i:hover{
+    color: white;
+}
+
+.renova{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: renova;
+    margin-top: 50px;
+}
+
+.botonRenova{
+    border-style: outset;
+    border-width: 5px;
+    padding: 35px;
+    margin: 70px;
+    grid-area: renova;
+    width: 550px;
+}
+
+.botonRenova h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.botonRenova:hover{
+    transform:scale(1.2,1.2);    
+    transition: all .5s;
+}
+
+.contenido{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 30px;
+    align-items: center;    
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.fotosVariedades{
+    width: 100%;
+}  
+
+.nuestroProducto{
+    background-color: rgba(214, 214, 214, 0.5);
+    padding: 30px;
+    border-radius: 40px;
+    margin: 30px;
+    width: 84%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nuestroProducto p{
+    font-size: 16px;
+    font-family: 'Spartan', sans-serif;
+    line-height: 35px;
+    padding: 25px;        
+}
+
+.nuestroProducto h2{
+    font-size: 30px;
+    font-family: 'Spartan', sans-serif;
+    padding: 25px;
+}
+
+.variedadesCesped{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+.variedades{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    width: 27%;
+    align-items: center;
+    background-color: $fondoMain;
+}
+
+
+.variedades:hover{
+    transform: scale(1.15,1.15);
+    transition: all 1s;
+    z-index: 11;
+}
+
+.variedades p{
+    font-size: 16px;
+    padding: 15px;
+    line-height: 35px;
+    font-family: 'Spartan', sans-serif;
+}
+
+.variedades h2{
+    padding: 15px;
+    font-size: 30px;
+    font-family: 'Spartan', sans-serif;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: 33% 33%;
+    grid-template-areas: "foto1 foto2"
+                        "foto3 foto4"
+                        "foto5 foto6"
+                        "foto7 foto8";
+    justify-content: space-around;
+    row-gap: 50px;
+    margin-bottom: 50px;
+    margin-top:200px;
+}
+
+.foto1{
+    grid-area: foto1;
+}
+
+.foto2{
+    grid-area: foto2;
+}
+
+.foto3{
+    grid-area: foto3;
+}
+
+.foto4{
+    grid-area: foto4;
+}
+
+.foto5{
+    grid-area: foto5;
+}
+
+.foto6{
+    grid-area: foto6;
+}
+
+.foto7{
+    grid-area: foto7;
+}
+
+.foto8{
+    grid-area: foto8;
+}
+
+.fotosgaleria:hover{
+    transform: scale(1.2,1.2);
+    transition: all 1s;
+    z-index: 11;
+}
+
+.faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.preguntas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "pregunta1 respuesta1"
+                        "respuesta2 pregunta2"
+                        "pregunta3 respuesta3"
+                        "respuesta4 pregunta4";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.pregunta1{
+    grid-area: pregunta1;
+}
+
+.pregunta2{
+    grid-area: pregunta2;
+}
+
+.pregunta3{
+    grid-area: pregunta3;
+}
+
+.pregunta4{
+    grid-area: pregunta4;
+}
+
+.respuesta1{
+    grid-area: respuesta1;
+}
+
+.respuesta2{
+    grid-area: respuesta2;
+}
+
+.respuesta3{
+    grid-area: respuesta3;
+}
+
+.respuesta4{
+    grid-area: respuesta4;
+}
+
+.answers{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+.questions{
+    height: 500px;
+    width: 100%;
+    background-image: url(../fotosuco/pastofondo.jpg);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questions h2{
+    font-size: 38px;
+    font-family: 'Spartan', sans-serif;
+    color: $fondoMain;
+}
+
+.answers p{
+    font-family: 'Spartan', sans-serif;
+    color: $mainColor;
+    font-size:22px;
+    padding: 15px;
+}
+
+.preguntas h2{
+    margin: 10px;
+    padding: 20px;
+    font-size: 20;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    margin-top: 150px;
+}
+
+.contacto h2{
+    font-family: 'Spartan', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mapaUco img{
+    width: 400px;
+    margin-top: 25px;
+}
+
+.formulario h2{
+    margin-bottom: 15px;
+}
+
+.dondeestamos h2{
+    margin-bottom: 15px;
+}
+
+.nav-item{
+    font-size: 18px;
+    text-align: right;
+}
+
+.navbar-brand img{
+    height: 120px;
+}
+
+.iconosRedes{
+    font-size: 35px;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .galeria{
+        grid-template-columns: 80%;
+        grid-template-areas: "foto1"
+                            "foto2"
+                            "foto3"
+                            "foto4"
+                            "foto5"
+                            "foto6"
+                            "foto7"
+                            "foto8"        
+    }
+    .barra{
+        flex-direction: column;
+    }
+    .menu{
+        font-size: 10px;
+    }
+    .redes{
+        flex-direction: row;
+        width: 80%;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .mainIndex{
+        grid-template-columns: 100%;
+        grid-template-areas: "quienes"
+                            "family"
+                            "historia"
+                            "jardin"
+                            "porQue"
+                            "pasto3"
+                            "renova"
+    }
+    .nuestroProducto{
+        width: auto;        
+    }
+    .nuestroProducto h2{
+        font-size: 20px;
+    }
+    .variedadesCesped{
+        flex-direction: column;
+    }
+
+    .variedades h2{
+        font-size: 20px;
+    }
+    .variedades{
+        width: auto;
+    }
+    .variedades img{
+        width: 100%;
+    }
+    .preguntas{
+        grid-template-columns: 100%;
+        grid-template-areas: "pregunta1"
+                        "respuesta1"
+                        "pregunta2"
+                        "respuesta2"
+                        "pregunta3"
+                        "respuesta3"
+                        "pregunta4"
+                        "respuesta4"
+    }
+    .contacto{
+        flex-direction: column;
+    }
+    .logo img{
+        width: 90%;
+    }
+    .menu{
+        width: 100%;
+    }
+    .textoCarta{
+        margin: 20px;
+        font-size: 18px;
+    }
+    .tituloCarta{
+    font-size: 24px;
+    font-family: 'Spartan', sans-serif;
+    margin-bottom: 20px;
+    }
+    .botonRenova h2{
+    font-size: 16px;
+    }
+    .botonRenova{
+    padding: 10px;
+    text-align: center;
+    }
+
+    .nuestroProducto{
+        background-color: rgba(252, 252, 252, 0.829);
+        padding: 10px;
+        border-radius:0px;
+        margin: 0px;
+        width: 100%;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }   
+
+
+    .nuestroProducto p{
+        font-size: 16px;
+        font-family: 'Spartan', sans-serif;
+        line-height: 35px;
+        padding: 10px;
+        text-align: justify;        
+        }
+
+    .nuestroProducto h2{
+        font-size: 22px;
+        font-family: 'Spartan', sans-serif;
+        padding: 16px;
+        text-align: center;    
+        }
+
+    .navbar-brand img{
+            height: 80px;
+    }
+    .nav-item{
+        font-size: 14px;
+    }
+
+    .nav-item li a:hover{
+        color: black;
+        font-weight: bolder;
+    }
+
+    .formulario{
+        width: 100%;
+    }
+    .mapaUco img{
+        width: 100%;
+    }
+    .dondeEstamos{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }   
+}
