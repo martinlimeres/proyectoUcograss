@@ -1,0 +1,82 @@
+@import "./variables";
+
+.contenido{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 30px;
+    align-items: center;    
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.fotosVariedades{
+    width: 100%;
+}  
+
+.nuestroProducto{
+    background-color: rgba(214, 214, 214, 0.5);
+    padding: 30px;
+    border-radius: 40px;
+    margin: 30px;
+    width: 84%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nuestroProducto p{
+    font-size: 16px;
+    font-family: $mainFont;
+    line-height: 35px;
+    padding: 25px;        
+}
+
+.nuestroProducto h2{
+    font-size: 30px;
+    font-family: $mainFont;
+    padding: 25px;
+}
+
+.variedadesCesped{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+}
+
+.variedades{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    width: 27%;
+    align-items: center;
+    background-color: $fondoMain;
+}
+
+
+.variedades:hover{
+    transform: scale(1.15,1.15);
+    transition: all 1s;
+    z-index: 11;
+}
+
+.variedades p{
+    font-size: 16px;
+    padding: 15px;
+    line-height: 35px;
+    font-family: $mainFont;
+}
+
+.variedades h2{
+    padding: 15px;
+    font-size: 30px;
+    font-family: $mainFont;
+}

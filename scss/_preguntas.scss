@@ -1,0 +1,90 @@
+@import "./variables";
+
+.faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.preguntas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "pregunta1 respuesta1"
+                        "respuesta2 pregunta2"
+                        "pregunta3 respuesta3"
+                        "respuesta4 pregunta4";
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.pregunta1{
+    grid-area: pregunta1;
+}
+
+.pregunta2{
+    grid-area: pregunta2;
+}
+
+.pregunta3{
+    grid-area: pregunta3;
+}
+
+.pregunta4{
+    grid-area: pregunta4;
+}
+
+.respuesta1{
+    grid-area: respuesta1;
+}
+
+.respuesta2{
+    grid-area: respuesta2;
+}
+
+.respuesta3{
+    grid-area: respuesta3;
+}
+
+.respuesta4{
+    grid-area: respuesta4;
+}
+
+.answers{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+.questions{
+    height: 500px;
+    width: 100%;
+    background-image: url(../fotosuco/pastofondo.jpg);
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questions h2{
+    font-size: 38px;
+    font-family: $mainFont;
+    color: $fondoMain;
+}
+
+.answers p{
+    font-family: $mainFont;
+    color: $mainColor;
+    font-size:22px;
+    padding: 15px;
+}
+
+.preguntas h2{
+    margin: 10px;
+    padding: 20px;
+    font-size: 20;
+}

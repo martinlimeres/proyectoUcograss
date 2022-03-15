@@ -1,0 +1,27 @@
+@import "./variables";
+
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    margin-top: 150px;
+}
+
+.contacto h2{
+    font-family: $mainFont;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.mapaUco img{
+    width: 400px;
+    margin-top: 25px;
+}
+
+.formulario h2{
+    margin-bottom: 15px;
+}
+
+.dondeestamos h2{
+    margin-bottom: 15px;
+}

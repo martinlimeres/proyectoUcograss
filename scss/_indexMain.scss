@@ -1,0 +1,105 @@
+@import "./variables";
+
+.mainIndex{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:"quienes family"
+                        "jardin historia"
+                        "porQue pasto3"
+                        "renova renova";
+    margin-top: 150px;
+}
+
+.cartas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 16px;
+    font-family: $mainFont;
+    line-height: 35px;
+    padding: 25px;
+}
+
+.cuadros{
+    background-color: $fondoMain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 19px;    
+}
+
+.textoCarta{
+    margin: 50px;
+    font-size: 26px;
+}
+
+.mainIndex img{
+    width: 100%;
+}
+
+
+
+.renova{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: renova;
+    margin-top: 50px;
+}
+
+.botonRenova{
+    border-style: outset;
+    border-width: 5px;
+    padding: 35px;
+    margin: 70px;
+    grid-area: renova;
+    width: 550px;
+
+    & h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    &:hover{
+        transform:scale(1.2,1.2);    
+        transition: all .5s;
+    }
+}
+
+
+.quienesSomos{
+    grid-area: quienes;
+}
+
+.fotoFamily{
+    grid-area: family;
+}
+
+
+.fotoJardin{
+    grid-area: jardin;
+}
+
+.fotosIndex{
+    filter: grayscale(50%)   
+}
+
+.fotosIndex:hover{
+    filter: grayscale(0%);
+}
+
+.historia{
+    grid-area: historia;
+}
+
+.elegir{
+    grid-area: porQue;
+}
+
+.pasto3{
+    grid-area:pasto3;
+}

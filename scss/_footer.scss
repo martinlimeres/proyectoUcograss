@@ -1,0 +1,36 @@
+@import "./variables";
+
+.footer{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+    padding-top: 20px;
+    font-family: $mainFont;
+    width: 100%;     
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content:space-between;
+    width: 40%;    
+}
+
+.instaIcon i:hover{
+    color: rgb(209, 0, 209);
+}
+
+.faceIcon i:hover{
+    color: rgb(40, 61, 245);
+}
+
+.phoneIcon i:hover{
+    color: white;
+}
+
+.iconosRedes{
+    font-size: 35px;
+}
