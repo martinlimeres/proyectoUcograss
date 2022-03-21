@@ -84,18 +84,6 @@ nav {
   grid-template-areas: "quienes family" "jardin historia" "porQue pasto3" "renova renova";
   margin-top: 150px; }
 
-.cartas {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  font-size: 16px;
-  font-family: "Spartan", sans-serif;
-  line-height: 35px;
-  padding: 25px; }
-
 .cuadros {
   background-color: white;
   display: flex;
@@ -105,8 +93,10 @@ nav {
   padding: 19px; }
 
 .textoCarta {
-  margin: 50px;
-  font-size: 26px; }
+  color: black;
+  font-size: 26px;
+  font-family: "Spartan", sans-serif;
+  padding: 50px; }
 
 .mainIndex img {
   width: 100%; }
@@ -126,8 +116,10 @@ nav {
   grid-area: renova;
   width: 550px; }
   .botonRenova h2 {
-    text-align: center;
-    font-size: 30px; }
+    color: #427c4a;
+    font-size: 30px;
+    font-family: "Spartan", sans-serif;
+    text-align: center; }
   .botonRenova:hover {
     transform: scale(1.2, 1.2);
     transition: all .5s; }
@@ -169,6 +161,18 @@ nav {
 .fotosVariedades {
   width: 100%; }
 
+.parrafoProductos, .nuestroProducto p, .variedades p {
+  font-size: 16px;
+  font-family: "Spartan", sans-serif;
+  line-height: 35px;
+  padding: 25px;
+  text-align: justify; }
+
+.tituloProductos, .nuestroProducto h2, .tituloVariedades, .variedades h2 {
+  font-size: 30px;
+  font-family: "Spartan", sans-serif;
+  padding: 25px; }
+
 .nuestroProducto {
   background-color: rgba(214, 214, 214, 0.5);
   padding: 30px;
@@ -181,17 +185,12 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  .nuestroProducto h2 {
+    font-weight: bolder; }
 
-.nuestroProducto p {
-  font-size: 16px;
-  font-family: "Spartan", sans-serif;
-  line-height: 35px;
-  padding: 25px; }
-
-.nuestroProducto h2 {
-  font-size: 30px;
-  font-family: "Spartan", sans-serif;
-  padding: 25px; }
+.tituloVariedades {
+  margin-bottom: 25px;
+  font-weight: bolder; }
 
 .variedadesCesped {
   display: flex;
@@ -209,22 +208,10 @@ nav {
   width: 27%;
   align-items: center;
   background-color: white; }
-
-.variedades:hover {
-  transform: scale(1.15, 1.15);
-  transition: all 1s;
-  z-index: 11; }
-
-.variedades p {
-  font-size: 16px;
-  padding: 15px;
-  line-height: 35px;
-  font-family: "Spartan", sans-serif; }
-
-.variedades h2 {
-  padding: 15px;
-  font-size: 30px;
-  font-family: "Spartan", sans-serif; }
+  .variedades:hover {
+    transform: scale(1.15, 1.15);
+    transition: all 1s;
+    z-index: 11; }
 
 .faq {
   display: flex;
@@ -266,36 +253,31 @@ nav {
   grid-area: respuesta4; }
 
 .answers {
-  height: 500px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center; }
+  .answers p {
+    font-size: 28px;
+    color: #427c4a;
+    font-family: "Spartan", sans-serif;
+    padding: 15px; }
 
 .questions {
-  height: 500px;
+  height: 600px;
   width: 100%;
-  background-image: url(../fotosuco/pastofondo.jpg);
+  background-image: url(../fotosuco/pastofondo.png);
   background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center; }
-
-.questions h2 {
-  font-size: 38px;
-  font-family: "Spartan", sans-serif;
-  color: white; }
-
-.answers p {
-  font-family: "Spartan", sans-serif;
-  color: #427c4a;
-  font-size: 22px;
-  padding: 15px; }
-
-.preguntas h2 {
-  margin: 10px;
-  padding: 20px;
-  font-size: 20; }
+  .questions h2 {
+    font-size: 38px;
+    color: white;
+    font-family: "Spartan", sans-serif;
+    text-align: center;
+    background: rgba(50, 121, 2, 0.63); }
 
 .galeria {
   display: grid;
@@ -340,11 +322,10 @@ nav {
   justify-content: space-evenly;
   margin: 20px;
   margin-top: 150px; }
-
-.contacto h2 {
-  font-family: "Spartan", sans-serif;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+  .contacto h2 {
+    font-family: "Spartan", sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px; }
 
 .mapaUco img {
   width: 400px;

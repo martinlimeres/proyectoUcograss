@@ -5,12 +5,12 @@
     justify-content: space-evenly;
     margin: 20px;
     margin-top: 150px;
-}
+    & h2{
+        font-family: $mainFont;
+        margin-top: 15px;
+        margin-bottom: 15px;
 
-.contacto h2{
-    font-family: $mainFont;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    }
 }
 
 .mapaUco img{

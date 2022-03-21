@@ -52,39 +52,37 @@
     grid-area: respuesta4;
 }
 
+@mixin estiloFaq ($tamanioLetra, $colorLetra){
+    font-size: $tamanioLetra;
+    color: $colorLetra;
+}
+
 .answers{
-    height: 500px;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;    
+    text-align: center;
+    & p{
+        @include estiloFaq(28px, $mainColor);
+        font-family: $mainFont;
+        padding: 15px;
+    }
 }
 
 .questions{
-    height: 500px;
+    height: 600px;
     width: 100%;
-    background-image: url(../fotosuco/pastofondo.jpg);
+    background-image: url(../fotosuco/pastofondo.png);
     background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
+    & h2{
+        @include estiloFaq(38px, $fondoMain);
+        font-family: $mainFont;
+        text-align: center;
+        background: rgba(50, 121, 2, 0.63);        
+    }
 }
 
-.questions h2{
-    font-size: 38px;
-    font-family: $mainFont;
-    color: $fondoMain;
-}
-
-.answers p{
-    font-family: $mainFont;
-    color: $mainColor;
-    font-size:22px;
-    padding: 15px;
-}
-
-.preguntas h2{
-    margin: 10px;
-    padding: 20px;
-    font-size: 20;
-}
