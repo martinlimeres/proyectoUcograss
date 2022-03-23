@@ -27,7 +27,7 @@ a{
 
 // MEDIA QUERIES 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     .galeria{
         grid-template-columns: 80%;
         grid-template-areas: "foto1"
@@ -63,6 +63,7 @@ a{
                             "pasto3"
                             "renova"
     }
+    
     .nuestroProducto{
         width: auto;        
     }
@@ -105,18 +106,17 @@ a{
     .textoCarta{
         margin: 20px;
         font-size: 18px;
+        padding: 0px;
     }
     .tituloCarta{
     font-size: 24px;
     font-family: $mainFont;
     margin-bottom: 20px;
     }
-    .botonRenova h2{
-    font-size: 16px;
-    }
-    .botonRenova{
-    padding: 10px;
-    text-align: center;
+    .button h2{
+        font-size: 18px;
+        text-align: center;
+        
     }
 
     .nuestroProducto{

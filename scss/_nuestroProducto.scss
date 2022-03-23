@@ -19,7 +19,6 @@
     font-size: 16px;
     font-family: $mainFont;
     line-height: 35px;
-    padding: 25px;
     text-align: justify;  
 }
 
@@ -44,12 +43,17 @@
 
     & p{
         @extend .parrafoProductos;
+        padding-left: 30px
     }
 
     & h2{
         @extend .tituloProductos;
         font-weight: bolder;
     }
+}
+
+.beneficios{
+    @extend .parrafoProductos;
 }
 
 .tituloVariedades{

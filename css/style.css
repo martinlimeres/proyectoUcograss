@@ -101,29 +101,6 @@ nav {
 .mainIndex img {
   width: 100%; }
 
-.renova {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-area: renova;
-  margin-top: 50px; }
-
-.botonRenova {
-  border-style: outset;
-  border-width: 5px;
-  padding: 35px;
-  margin: 70px;
-  grid-area: renova;
-  width: 550px; }
-  .botonRenova h2 {
-    color: #427c4a;
-    font-size: 30px;
-    font-family: "Spartan", sans-serif;
-    text-align: center; }
-  .botonRenova:hover {
-    transform: scale(1.2, 1.2);
-    transition: all .5s; }
-
 .quienesSomos {
   grid-area: quienes; }
 
@@ -133,12 +110,6 @@ nav {
 .fotoJardin {
   grid-area: jardin; }
 
-.fotosIndex {
-  filter: grayscale(50%); }
-
-.fotosIndex:hover {
-  filter: grayscale(0%); }
-
 .historia {
   grid-area: historia; }
 
@@ -147,6 +118,58 @@ nav {
 
 .pasto3 {
   grid-area: pasto3; }
+
+.renova {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: renova;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+.button {
+  display: inline-block;
+  border-radius: 160px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .15rem;
+  transition: all 1s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding: 35px;
+  margin: 70px; }
+  .button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #427c4a;
+    border-radius: 10rem;
+    z-index: -2; }
+  .button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #274a2c;
+    transition: all 1s;
+    border-radius: 10rem;
+    z-index: -1; }
+  .button:hover {
+    color: #fff; }
+    .button:hover:before {
+      width: 100%; }
+      .button:hover:before h2 {
+        color: white;
+        font-size: 30px;
+        font-family: "Spartan", sans-serif;
+        text-align: center; }
 
 .contenido {
   width: 100%;
@@ -161,11 +184,10 @@ nav {
 .fotosVariedades {
   width: 100%; }
 
-.parrafoProductos, .nuestroProducto p, .variedades p {
+.parrafoProductos, .nuestroProducto p, .beneficios, .variedades p {
   font-size: 16px;
   font-family: "Spartan", sans-serif;
   line-height: 35px;
-  padding: 25px;
   text-align: justify; }
 
 .tituloProductos, .nuestroProducto h2, .tituloVariedades, .variedades h2 {
@@ -185,6 +207,8 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  .nuestroProducto p {
+    padding-left: 30px; }
   .nuestroProducto h2 {
     font-weight: bolder; }
 
@@ -328,7 +352,7 @@ nav {
     margin-bottom: 15px; }
 
 .mapaUco img {
-  width: 400px;
+  width: 600px;
   margin-top: 25px; }
 
 .formulario h2 {
@@ -351,7 +375,7 @@ a {
   color: #427c4a;
   font-family: "Spartan", sans-serif; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .galeria {
     grid-template-columns: 80%;
     grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6" "foto7" "foto8"; }
@@ -392,15 +416,14 @@ a {
     width: 100%; }
   .textoCarta {
     margin: 20px;
-    font-size: 18px; }
+    font-size: 18px;
+    padding: 0px; }
   .tituloCarta {
     font-size: 24px;
     font-family: "Spartan", sans-serif;
     margin-bottom: 20px; }
-  .botonRenova h2 {
-    font-size: 16px; }
-  .botonRenova {
-    padding: 10px;
+  .button h2 {
+    font-size: 18px;
     text-align: center; }
   .nuestroProducto {
     background-color: rgba(252, 252, 252, 0.829);
