@@ -119,6 +119,73 @@ nav {
 .pasto3 {
   grid-area: pasto3; }
 
+.contenido {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px; }
+
+.fotosVariedades {
+  width: 100%; }
+
+.parrafoProductos, .nuestroProducto p, .beneficios, .variedades p {
+  font-size: 16px;
+  font-family: "Spartan", sans-serif;
+  line-height: 35px;
+  text-align: justify; }
+
+.tituloProductos, .nuestroProducto h2, .tituloVariedades, .variedades h2 {
+  font-size: 30px;
+  font-family: "Spartan", sans-serif;
+  padding: 25px;
+  text-align: center; }
+
+.nuestroProducto {
+  background-color: rgba(214, 214, 214, 0.5);
+  padding: 30px;
+  border-radius: 40px;
+  margin: 30px;
+  width: 84%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .nuestroProducto p {
+    padding-left: 30px; }
+  .nuestroProducto h2 {
+    font-weight: bolder; }
+
+.tituloVariedades {
+  margin-bottom: 25px;
+  font-weight: bolder; }
+
+.variedadesCesped {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 50px; }
+
+.variedades {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  width: 27%;
+  align-items: center;
+  background-color: white; }
+  .variedades:hover {
+    transform: scale(1.15, 1.15);
+    transition: all 1s;
+    z-index: 11; }
+
 .renova {
   display: flex;
   align-items: center;
@@ -169,73 +236,8 @@ nav {
         color: white;
         font-size: 30px;
         font-family: "Spartan", sans-serif;
-        text-align: center; }
-
-.contenido {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  padding: 30px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 150px; }
-
-.fotosVariedades {
-  width: 100%; }
-
-.parrafoProductos, .nuestroProducto p, .beneficios, .variedades p {
-  font-size: 16px;
-  font-family: "Spartan", sans-serif;
-  line-height: 35px;
-  text-align: justify; }
-
-.tituloProductos, .nuestroProducto h2, .tituloVariedades, .variedades h2 {
-  font-size: 30px;
-  font-family: "Spartan", sans-serif;
-  padding: 25px; }
-
-.nuestroProducto {
-  background-color: rgba(214, 214, 214, 0.5);
-  padding: 30px;
-  border-radius: 40px;
-  margin: 30px;
-  width: 84%;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
-  .nuestroProducto p {
-    padding-left: 30px; }
-  .nuestroProducto h2 {
-    font-weight: bolder; }
-
-.tituloVariedades {
-  margin-bottom: 25px;
-  font-weight: bolder; }
-
-.variedadesCesped {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  gap: 50px; }
-
-.variedades {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 10px;
-  width: 27%;
-  align-items: center;
-  background-color: white; }
-  .variedades:hover {
-    transform: scale(1.15, 1.15);
-    transition: all 1s;
-    z-index: 11; }
+        text-align: center;
+        line-height: 2px; }
 
 .faq {
   display: flex;
@@ -408,6 +410,17 @@ a {
   .preguntas {
     grid-template-columns: 100%;
     grid-template-areas: "pregunta1" "respuesta1" "pregunta2" "respuesta2" "pregunta3" "respuesta3" "pregunta4" "respuesta4"; }
+  .questions {
+    height: 280px;
+    padding: 30px; }
+    .questions h2 {
+      font-size: 28px; }
+  .answers {
+    height: 280px;
+    padding: 30px; }
+    .answers p {
+      font-size: 20px;
+      text-align: justify; }
   .contacto {
     flex-direction: column; }
   .logo img {
@@ -461,4 +474,7 @@ a {
     width: 100%; }
   .dondeEstamos {
     margin-top: 30px;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .cuadros {
+    padding-top: 50px;
+    padding-bottom: 50px; } }

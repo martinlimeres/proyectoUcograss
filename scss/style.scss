@@ -94,6 +94,24 @@ a{
                         "pregunta4"
                         "respuesta4"
     }
+    
+    .questions {
+        height: 280px;
+        padding: 30px;
+        & h2{
+            font-size: 28px;
+        }
+    }
+
+    .answers{
+        height: 280px;
+        padding: 30px;
+        & p{
+            font-size: 20px;
+            text-align: justify;
+        }
+    }
+
     .contacto{
         flex-direction: column;
     }
@@ -170,5 +188,9 @@ a{
     .dondeEstamos{
         margin-top: 30px;
         margin-bottom: 30px;
+    }
+    .cuadros{
+        padding-top: 50px;
+        padding-bottom: 50px;
     }   
 }
