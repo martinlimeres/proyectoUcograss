@@ -5,14 +5,14 @@ nav {
   align-items: center; }
 
 .nav-item {
-  font-size: 18px;
+  font-size: 16px;
   text-align: right; }
 
 .navbar-brand img {
-  height: 120px; }
+  height: 80px; }
 
 .header {
-  height: 150px;
+  height: 110px;
   position: fixed;
   top: 0;
   background-color: white;
@@ -34,17 +34,21 @@ nav {
 .menu {
   display: flex;
   list-style-type: none;
-  justify-content: right;
+  justify-content: space-between;
   text-align: center;
   align-items: center;
   font-size: 18px;
   font-family: "Spartan", sans-serif;
   font-weight: 400; }
   .menu li {
-    margin: 20px; }
+    margin: 20px;
+    word-break: keep-all; }
   .menu li a:hover {
     color: black;
     font-weight: bolder; }
+  .menu .navbar-toggler {
+    margin-left: 12px;
+    margin-right: 12px; }
 
 .menuBarra {
   justify-content: right; }
@@ -82,19 +86,19 @@ nav {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "quienes family" "jardin historia" "porQue pasto3" "renova renova";
-  margin-top: 150px; }
+  margin-top: 110px; }
 
 .cuadros {
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding: 19px; }
 
 .textoCarta {
   color: black;
-  font-size: 26px;
+  font-size: 22px;
   font-family: "Spartan", sans-serif;
   padding: 50px; }
 
@@ -127,7 +131,7 @@ nav {
   padding: 30px;
   align-items: center;
   justify-content: center;
-  margin-top: 150px; }
+  margin-top: 110px; }
 
 .fotosVariedades {
   width: 100%; }
@@ -145,12 +149,10 @@ nav {
   text-align: center; }
 
 .nuestroProducto {
-  background-color: rgba(214, 214, 214, 0.5);
+  background-color: white;
   padding: 30px;
-  border-radius: 40px;
   margin: 30px;
-  width: 84%;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
   margin-bottom: 100px;
   display: flex;
   justify-content: center;
@@ -160,6 +162,43 @@ nav {
     padding-left: 30px; }
   .nuestroProducto h2 {
     font-weight: bolder; }
+  .nuestroProducto .tituloBeneficios {
+    padding: 50px;
+    text-align: center; }
+
+.accordion-button:link, .accordion-button:visited, .accordion-button:hover, .accordion-button:active {
+  background-color: rgba(66, 124, 74, 0.352) !important;
+  color: black !important;
+  text-decoration: none !important;
+  border: hidden !important;
+  border-color: #427c4a !important; }
+
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important; }
+
+.acordeon {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "beneficio1 beneficio2 beneficio3" "beneficio4 beneficio5 beneficio6"; }
+
+.beneficios .beneficio1 {
+  grid-area: beneficio1; }
+
+.beneficios .beneficio2 {
+  grid-area: beneficio2; }
+
+.beneficios .beneficio3 {
+  grid-area: beneficio3; }
+
+.beneficios .beneficio4 {
+  grid-area: beneficio4; }
+
+.beneficios .beneficio5 {
+  grid-area: beneficio5; }
+
+.beneficios .beneficio6 {
+  grid-area: beneficio6; }
 
 .tituloVariedades {
   margin-bottom: 25px;
@@ -243,7 +282,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 150px; }
+  margin-top: 110px; }
 
 .preguntas {
   width: 100%;
@@ -303,16 +342,16 @@ nav {
     color: white;
     font-family: "Spartan", sans-serif;
     text-align: center;
-    background: rgba(50, 121, 2, 0.63); }
+    background: rgba(50, 121, 2, 0.767); }
 
 .galeria {
   display: grid;
-  grid-template-columns: 33% 33%;
+  grid-template-columns: 35% 35%;
   grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6" "foto7 foto8";
   justify-content: space-around;
   row-gap: 50px;
   margin-bottom: 50px;
-  margin-top: 200px; }
+  margin-top: 160px; }
 
 .foto1 {
   grid-area: foto1; }
@@ -353,6 +392,14 @@ nav {
     margin-top: 15px;
     margin-bottom: 15px; }
 
+.form-control:focus {
+  border-color: #427c4a;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #427c4a; }
+
+.form-select:focus {
+  border-color: #427c4a;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #427c4a; }
+
 .mapaUco img {
   width: 600px;
   margin-top: 25px; }
@@ -379,7 +426,7 @@ a {
 
 @media only screen and (max-width: 900px) {
   .galeria {
-    grid-template-columns: 80%;
+    grid-template-columns: 99%;
     grid-template-areas: "foto1" "foto2" "foto3" "foto4" "foto5" "foto6" "foto7" "foto8"; }
   .barra {
     flex-direction: column; }
@@ -477,4 +524,8 @@ a {
     margin-bottom: 30px; }
   .cuadros {
     padding-top: 50px;
-    padding-bottom: 50px; } }
+    padding-bottom: 50px; }
+  .acordeon {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "beneficio1" "beneficio2"  "beneficio3" "beneficio4"  "beneficio5" "beneficio6"; } }

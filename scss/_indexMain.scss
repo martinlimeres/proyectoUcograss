@@ -7,7 +7,7 @@
                         "jardin historia"
                         "porQue pasto3"
                         "renova renova";
-    margin-top: 150px;
+    margin-top: 110px;
 }
 
 @mixin estiloCuadros($colorLetra, $tamanioLetra, $fuenteLetra){
@@ -20,21 +20,19 @@
     background-color: $fondoMain;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     padding: 19px;
 }
 
 .textoCarta{
-    @include estiloCuadros(black, 26px, $mainFont);
+    @include estiloCuadros(black, 22px, $mainFont);
     padding: 50px;
 }    
 
 .mainIndex img{
     width: 100%;
 }
-
-
 
 .quienesSomos{
     grid-area: quienes;
@@ -44,11 +42,9 @@
     grid-area: family;
 }
 
-
 .fotoJardin{
     grid-area: jardin;
 }
-
 
 .historia{
     grid-area: historia;

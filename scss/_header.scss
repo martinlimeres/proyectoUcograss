@@ -8,16 +8,16 @@ nav{
 }
 
 .nav-item{
-    font-size: 18px;
+    font-size: 16px;
     text-align: right;
 }
 
 .navbar-brand img{
-    height: 120px;
+    height: 80px;
 }
 
 .header{
-    height: 150px;
+    height: 110px;
     position: fixed;
     top: 0;
     background-color: $fondoMain;
@@ -43,22 +43,29 @@ nav{
 .menu{
     display: flex;
     list-style-type: none;
-    justify-content: right;
+    justify-content: space-between;
     text-align: center;
     align-items: center;
     font-size: 18px; 
     font-family: $mainFont;
     font-weight: 400;
-    
+        
     & li{
         margin: 20px;
+        word-break:keep-all;
     }
 
     & li a:hover{
         color: rgb(0, 0, 0);
     font-weight: bolder;
     }
+
+    & .navbar-toggler{
+        margin-left: 12px;
+        margin-right: 12px;
+    }    
 }
+
 
 .menuBarra{
     justify-content: right;

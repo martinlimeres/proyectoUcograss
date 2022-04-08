@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 110px;
 }
 
 .preguntas{
@@ -82,7 +82,7 @@
         @include estiloFaq(38px, $fondoMain);
         font-family: $mainFont;
         text-align: center;
-        background: rgba(50, 121, 2, 0.63);        
+        background: rgba(50, 121, 2, 0.767);        
     }
 }
 

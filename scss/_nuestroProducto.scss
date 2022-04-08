@@ -8,7 +8,7 @@
     padding: 30px;
     align-items: center;    
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 110px;
 }
 
 .fotosVariedades{
@@ -30,12 +30,10 @@
 }
 
 .nuestroProducto{
-    background-color: rgba(214, 214, 214, 0.5);
+    background-color: $fondoMain;
     padding: 30px;
-    border-radius: 40px;
     margin: 30px;
-    width: 84%;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 100%;
     margin-bottom: 100px;
     display: flex;
     justify-content: center;
@@ -52,10 +50,56 @@
         font-weight: bolder;
         
     }
+
+    & .tituloBeneficios{
+        padding: 50px;
+        text-align: center;
+    }
 }
+
+
+.accordion-button:link, .accordion-button:visited, .accordion-button:hover, .accordion-button:active  {
+    background-color: rgba(66, 124, 74, 0.352) !important;
+    color:black!important;
+    text-decoration: none !important;
+    border: hidden !important;
+    border-color: $mainColor !important;
+}
+
+:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.acordeon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "beneficio1 beneficio2 beneficio3"
+                        "beneficio4 beneficio5 beneficio6";
+}
+
+
 
 .beneficios{
     @extend .parrafoProductos;
+    & .beneficio1{
+        grid-area: beneficio1;
+    }
+    & .beneficio2{
+        grid-area: beneficio2;
+    }
+    & .beneficio3{
+        grid-area: beneficio3;
+    }
+    & .beneficio4{
+        grid-area: beneficio4;
+    }
+    & .beneficio5{
+        grid-area: beneficio5;
+    }
+    & .beneficio6{
+        grid-area: beneficio6;
+    }
 }
 
 .tituloVariedades{

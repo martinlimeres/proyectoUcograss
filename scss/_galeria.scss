@@ -2,7 +2,7 @@
 
 .galeria{
     display: grid;
-    grid-template-columns: 33% 33%;
+    grid-template-columns: 35% 35%;
     grid-template-areas: "foto1 foto2"
                         "foto3 foto4"
                         "foto5 foto6"
@@ -10,7 +10,7 @@
     justify-content: space-around;
     row-gap: 50px;
     margin-bottom: 50px;
-    margin-top:200px;
+    margin-top:160px;
 }
 
 .foto1{

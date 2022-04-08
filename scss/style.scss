@@ -29,7 +29,7 @@ a{
 
 @media only screen and (max-width: 900px){
     .galeria{
-        grid-template-columns: 80%;
+        grid-template-columns: 99%;
         grid-template-areas: "foto1"
                             "foto2"
                             "foto3"
@@ -192,5 +192,15 @@ a{
     .cuadros{
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+    .acordeon{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "beneficio1"
+                                "beneficio2" 
+                                "beneficio3"
+                                "beneficio4" 
+                                "beneficio5"
+                                "beneficio6";
     }   
 }
