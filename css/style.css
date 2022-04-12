@@ -136,13 +136,13 @@ nav {
 .fotosVariedades {
   width: 100%; }
 
-.parrafoProductos, .nuestroProducto p, .beneficios, .variedades p {
+.parrafoProductos, .nuestroProducto p, .textoAcordeon, .beneficios, .variedades p {
   font-size: 16px;
   font-family: "Spartan", sans-serif;
   line-height: 35px;
   text-align: justify; }
 
-.tituloProductos, .nuestroProducto h2, .tituloVariedades, .variedades h2 {
+.tituloProductos, .nuestroProducto h2, .tituloVariedades, .variedades h2, .cualElegir {
   font-size: 30px;
   font-family: "Spartan", sans-serif;
   padding: 25px;
@@ -152,18 +152,19 @@ nav {
   background-color: white;
   padding: 30px;
   margin: 30px;
+  margin-top: 10px;
+  padding-top: 10px;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
   .nuestroProducto p {
     padding-left: 30px; }
-  .nuestroProducto h2 {
-    font-weight: bolder; }
   .nuestroProducto .tituloBeneficios {
     padding: 50px;
+    padding-top: 20px;
     text-align: center; }
 
 .accordion-button:link, .accordion-button:visited, .accordion-button:hover, .accordion-button:active {
@@ -201,8 +202,7 @@ nav {
   grid-area: beneficio6; }
 
 .tituloVariedades {
-  margin-bottom: 25px;
-  font-weight: bolder; }
+  margin-bottom: 25px; }
 
 .variedadesCesped {
   display: flex;
@@ -225,12 +225,16 @@ nav {
     transition: all 1s;
     z-index: 11; }
 
+.cualElegir {
+  font-size: 24px;
+  margin-top: 50px; }
+
 .renova {
   display: flex;
   align-items: center;
   justify-content: center;
   grid-area: renova;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 50px; }
 
 .button {
@@ -245,7 +249,7 @@ nav {
   overflow: hidden;
   z-index: 1;
   padding: 35px;
-  margin: 70px; }
+  margin: 50px; }
   .button:after {
     content: '';
     position: absolute;
@@ -351,7 +355,13 @@ nav {
   justify-content: space-around;
   row-gap: 50px;
   margin-bottom: 50px;
-  margin-top: 160px; }
+  margin-top: 50px; }
+
+.tituloGaleria {
+  margin-top: 150px;
+  font-family: "Spartan", sans-serif;
+  text-align: center;
+  font-size: 30px; }
 
 .foto1 {
   grid-area: foto1; }

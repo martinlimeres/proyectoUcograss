@@ -33,8 +33,10 @@
     background-color: $fondoMain;
     padding: 30px;
     margin: 30px;
+    margin-top: 10px;
+    padding-top: 10px;
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,15 +48,19 @@
     }
 
     & h2{
-        @extend .tituloProductos;
-        font-weight: bolder;
+        @extend .tituloProductos;  
         
     }
 
     & .tituloBeneficios{
         padding: 50px;
+        padding-top: 20px;
         text-align: center;
     }
+}
+
+.textoAcordeon{
+    @extend .parrafoProductos;
 }
 
 
@@ -105,7 +111,7 @@
 .tituloVariedades{
     @extend .tituloProductos;
     margin-bottom: 25px;
-    font-weight: bolder;
+    
 }
 
 .variedadesCesped{
@@ -137,6 +143,12 @@
     }
 }
 
+.cualElegir{
+    @extend .tituloProductos;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
 // botón
 
 .renova{
@@ -144,7 +156,7 @@
     align-items: center;
     justify-content: center;
     grid-area: renova;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -160,7 +172,7 @@
     overflow: hidden;
     z-index: 1;
     padding: 35px;
-    margin: 70px;
+    margin: 50px;
     
     &:after {
         content: '';
